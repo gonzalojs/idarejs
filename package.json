@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "server": "node api/server.js",
     "serve": "vue-cli-service serve",
+    "two": "yarn server & yarn serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -13,6 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "lowdb": "^1.0.0",
+    "morgan": "^1.10.0",
     "nanoid": "^3.1.20",
     "puppeteer": "^5.5.0",
     "vue": "^2.6.11",
