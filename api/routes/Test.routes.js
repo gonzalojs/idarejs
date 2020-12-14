@@ -3,9 +3,9 @@ const {
 } = require('express')
 const router = Router()
 
-const postNoteController = require('../controllers/test/post.note')
+const getNoteController = require('../controllers/test/post.note')
 
-router.post('/notes/new', postNoteController.post_note)
+router.get('/tasks', getNoteController.get_task)
 
 
 module.exports = router
