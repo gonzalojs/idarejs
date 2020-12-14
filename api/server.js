@@ -1,5 +1,8 @@
 const http = require('http');
 const app = require('./app')
+const { createConnection } = require('./config/database')
+
+createConnection()
 
 const port = process.env.ENV || 3000
 
